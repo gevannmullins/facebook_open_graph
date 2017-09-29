@@ -1,5 +1,4 @@
 <?php
-error_reporting(-1);
 session_start();
 require_once __DIR__ . '/vendor/autoload.php'; // change path as needed
 
@@ -126,30 +125,6 @@ if (isset($accessToken)) {
     $user_gender = $user->getFieldNames();
     $user_location = $user->getLocation()->getName();
     $user_phone = $user->all();
-
-//    $u = $user_profile->getFieldNames();
-
-
-    //    echo '<img src="https://graph.facebook.com/' . $user_id . '/picture?type=large" class="img-responsive" />';
-//    echo 'Name: ' . $user->getName();
-//    echo '<br />';
-//    echo 'Birthday:  ' . date('Y-m-d', $user->getBirthday());
-//    echo '<br />';
-//    echo '<img src=' . $user['picture']['url'] . ' />';
-//    echo '<br />';
-//    echo $user_firstname;
-//    echo '<br />';
-//    echo $user_lastname;
-//    echo '<br />';
-//    echo 'AccessGranted=' . $access_granted;
-//    echo '<br />';
-//    echo $_SESSION['facebook_access_token'];
-//    echo '<br />';
-//    echo '<br />';
-//
-//    // printing $profile array on the screen which holds the basic info about user
-//    print_r($profile);
-
 
     ?>
 

@@ -1,9 +1,8 @@
 <?php
-
-error_reporting(-1);
-session_start();
-
-include_once "facebook_config.php";
+//session_start();
+//
+include_once "callback.php";
+//include_once "facebook_config.php";
 
 $helper = $fb->getCanvasHelper();
 
@@ -30,13 +29,7 @@ try {
 
 
 ?>
-<style>
-    .content_header {
-        font-size: 24px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-</style>
+
 <div class="row">
     <div class="col-xs-12">
         <h3 class="content_header"><?php echo $user_firstname; ?> has commented on {COMMENTS AMOUNT} posts.</h3>
